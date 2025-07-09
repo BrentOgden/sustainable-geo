@@ -67,16 +67,20 @@ yarn
 ```
 ### Folder Structure
 
-├── public/                # Static assets (images, fonts)
+
+```
+.
+├── public/                # Static assets (favicon, robots.txt)
 ├── src/
-│   ├── assets/            # Logos, illustrations
-│   ├── components/        # Reusable UI components
-│   ├── pages/             # Page sections (Home, About, Solutions, Contact)
-│   ├── styles/            # Tailwind config & global CSS
+│   ├── assets/            # Images, icons, logos
+│   ├── components/        # Reusable UI components (Header, Footer, Gallery, etc.)
+│   ├── pages/             # Sections (Home, Projects, Story, Connect)
+│   ├── styles/            # Tailwind config, global CSS
 │   ├── App.jsx            # Routes & layout
-│   └── main.jsx           # App entrypoint
-├── .env.local             # Environment variables (gitignored)
+│   └── main.jsx           # Application entrypoint
+├── .gitignore             # Ignore rules
 ├── tailwind.config.js
 ├── vite.config.js
 └── README.md
+
 
