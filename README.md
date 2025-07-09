@@ -59,12 +59,12 @@ Live site: https://sustainable-geo.netlify.app
 ### Installation
 
 ```bash
-git clone https://github.com/your-username/sustainable-geospatial.git
-cd sustainable-geospatial
+git clone https://github.com/your-username/sustainable-geo.git
+cd sustainable-geo
 npm install
 # or
 yarn
-
+```
 ### Folder Structure
 .
 ├── public/                # Static assets (images, fonts)
