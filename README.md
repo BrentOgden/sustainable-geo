@@ -66,7 +66,7 @@ npm install
 yarn
 ```
 ### Folder Structure
-.
+
 ├── public/                # Static assets (images, fonts)
 ├── src/
 │   ├── assets/            # Logos, illustrations
