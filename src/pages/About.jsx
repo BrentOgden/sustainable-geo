@@ -39,14 +39,14 @@ export default function About() {
                 </div>
             </section>
 
-            {/* Section heading inside container, full-width bg */}
+            
             <section className="bg-[#031A13]">
                 <div className="max-w-6xl mx-auto border-b border-white py-8 px-4">
                     <h2 className="text-xl text-white font-semibold">About Us</h2>
                 </div>
             </section>
 
-            {/* Card grid */}
+            
             <main className="py-16 px-6 md:px-0 md:max-w-6xl md:mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     {cards.map(({ title, text, img }) => (

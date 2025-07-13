@@ -41,7 +41,7 @@ export default function ContactForm() {
         throw new Error(err.error || 'Network error')
       }
 
-      alert('Thanks! Your message has been sent.')
+      alert('Thank you for your inquiry! We will get back to you within 2-5 business days.')
       setFormData({ name:'', email:'', message:'' })
       recaptchaRef.current.reset()
       setRecaptchaToken(null)

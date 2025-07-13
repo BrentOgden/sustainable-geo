@@ -1,13 +1,13 @@
 // src/components/CookieBanner.jsx
 import React, { useState, useEffect } from 'react'
 
-const GA_MEASUREMENT_ID = 'G-0MXRMM91M6'  // ← your GA4 Measurement ID
+const GA_MEASUREMENT_ID = 'G-0MXRMM91M6'  
 
 export default function CookieBanner() {
   const [accepted, setAccepted] = useState(false)
 
   useEffect(() => {
-    // if they’ve already accepted in the past, load GA immediately
+    
     if (localStorage.getItem('sg_cookie_consent') === 'true') {
       setAccepted(true)
       loadGoogleAnalytics()
@@ -21,13 +21,13 @@ export default function CookieBanner() {
   }
 
   function loadGoogleAnalytics() {
-    // 1) load the gtag.js library
+   
     const tag = document.createElement('script')
     tag.async = true
     tag.src   = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`
     document.head.appendChild(tag)
 
-    // 2) initialize it
+   
     const inline = document.createElement('script')
     inline.innerHTML = `
       window.dataLayer = window.dataLayer || [];

@@ -10,14 +10,14 @@ import grid6 from '../assets/aboutgrid6.jpeg'
 /**
  * ImageGrid
  * @param {Object} props
- * @param {string[]} [props.images] — array of image URLs (defaults to grid1–grid5)
- * @param {number} [props.columns=3] — number of columns on md+ screens
+ * @param {string[]} [props.images] 
+ * @param {number} [props.columns=3] 
  */
 export default function ImageGridAbout({
   images = [grid1, grid2, grid3, grid4, grid5, grid6],
   columns = 3,
 }) {
-  // build the responsive grid-cols classes
+  
   const gridColsClass = `grid-cols-1 sm:grid-cols-2 md:grid-cols-3`
 
   return (

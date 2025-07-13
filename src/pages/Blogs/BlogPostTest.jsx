@@ -5,7 +5,7 @@ import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw'  
 import remarkGfm from 'remark-gfm'
 
-// glob-import your MD files as before...
+
 const postFiles = import.meta.glob('../../posts/*.md', { as: 'raw', eager: true })
 const posts = {}
 for (const path in postFiles) {
@@ -33,7 +33,7 @@ export default function BlogPostTest() {
   const raw = posts[slug]
   if (!raw) return <Navigate to="/404" replace />
 
-  // simple front-matter strip (as before)...
+ 
   let data = {}, content = raw
   if (raw.startsWith('---')) {
     const end = raw.indexOf('---', 3)

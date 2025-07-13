@@ -4,7 +4,7 @@ import BlogCard from '../components/BlogCard'
 import heroImg from '../assets/aboutbg.jpeg'
 
 
-// sample posts data
+
 const posts = [
     {
         slug: 'what-is-remote-sensing',
@@ -45,7 +45,7 @@ export default function Blog() {
                 </div>
             </section>
 
-            {/* Posts grid */}
+            
             <div className="max-w-6xl mx-auto px-4 py-12">
                 <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                     {posts.map(post => (
