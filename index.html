@@ -1,84 +1,47 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <!-- index.html -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  integrity="…"
-  crossorigin="anonymous"
-/>
-
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-  </style>
-
-
-  <script src="https://www.google.com/recaptcha/enterprise.js?render=6Le7BHMrAAAAABN7VDzquLYljToKzbdgRJro-2-C"></script>
-  <script>
-    function onClick(e) {
-      e.preventDefault();
-      grecaptcha.enterprise.ready(async () => {
-        const token = await grecaptcha.enterprise.execute('6Le7BHMrAAAAABN7VDzquLYljToKzbdgRJro-2-C', { action: 'LOGIN' });
-      });
-    }
-  </script>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- your other <link> and <script> tags here -->
 </head>
-
 <body>
   <div id="root"></div>
-  <script>
-    window._support = window._support || {}
-    window._support.ui = { widget: true }
-  </script>
-  <script type="module" src="/src/main.jsx"></script>
-  <script type="text/javascript" async src="https://cdn.reamaze.com/assets/reamaze-loader.js"></script>
-  <script type="text/javascript">
-    var _support = _support || { 'ui': {}, 'user': {} };
-    _support['account'] = 'sustainable-geospatial';
-    _support['ui']['contactMode'] = 'mixed';
-    _support['ui']['enableKb'] = 'false';
-    _support['ui']['styles'] = {
-      widgetColor: 'rgb(3, 26, 19)',
-      gradient: true,
-    };
-    _support['ui']['shoutboxFacesMode'] = 'default';
-    _support['ui']['shoutboxHeaderLogo'] = true;
-    _support['ui']['widget'] = {
-      icon: 'webChat',
-      displayOn: 'all',
-      fontSize: 'default',
-      allowBotProcessing: true,
-      slug: 'sustainable-geospatial-chat-slash-contact-form-shoutbox',
-      label: {
-        text: 'Let us know if you have any questions! &#128522;',
-        mode: "notification",
-        delay: 3,
-        duration: 30,
-        primary: 'I have a question',
-        secondary: 'No, thanks',
-        sound: true,
-      },
-      position: 'bottom-right',
-      mobilePosition: 'bottom-right'
-    };
-    _support['apps'] = {
-      faq: { "enabled": false },
-      recentConversations: {},
-      orders: {},
-      shopper: {}
-    };
-    _support['ui']['appOrder'] = ["faq", "orders", "shopper", "recentConversations"];
-  </script>
-</body>
 
+  <script type="text/javascript" async src="https://cdn.reamaze.com/assets/reamaze-loader.js"></script>
+<script type="text/javascript">
+  var _support = _support || { 'ui': {}, 'user': {} };
+  _support['account'] = '4eb83d19-1b0a-438f-8d3d-7fd440622087';
+  _support['ui']['contactMode'] = 'mixed';
+  _support['ui']['enableKb'] = 'true';
+  _support['ui']['mailbox'] = '47144219';
+  _support['ui']['styles'] = {
+    widgetColor: '#031a13',
+    gradient: true,
+  };
+  _support['ui']['shoutboxFacesMode'] = '';
+  _support['ui']['widget'] = {
+    allowBotProcessing: 'false',
+    slug: 'sustainable-geospatial-324447fbb117447a',
+    label: {
+      text: 'Let us know if you have any questions! 😊',
+      mode: "notification",
+      delay: 3,
+      duration: 30,
+      primary: '',
+      secondary: '',
+      sound: true,
+    },
+    position: 'bottom-right'
+  };
+  _support['ui']['overrides'] = _support['ui']['overrides'] || {};
+  _support['ui']['overrides']['confirmationMessage'] = 'Your message has been submitted. We will respond either in this chat or via email shortly.';
+  _support['apps'] = {
+    recentConversations: {},
+    faq: {"enabled":true}
+  };
+</script>
+  <!-- 3) YOUR REACT ENTRYPOINT -->
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 </html>
