@@ -15,6 +15,7 @@ export default function Footer() {
           <p className="text-sm">
             Sustainable Geospatial Solutions LLC, DBA Sustainable Geospatial – All Rights Reserved.
           </p>
+          <p className='text-xs'>Page created by <a href='https://www.pspcompass.com' target='_blank' className='font-bold text-[rgb(78,181,150)] hover:text-[rgb(78,181,150,.8)]'>PSP Compass Solutions</a></p>
         </div>
 
         
@@ -24,6 +25,7 @@ export default function Footer() {
             alt="Sustainable Geospatial Logo"
             className="h-12 md:h-16"
           />
+          
         </div>
       </div>
 

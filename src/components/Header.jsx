@@ -50,7 +50,7 @@ export default function Header() {
 
                 {/* Mobile Hamburger */}
                 <button
-                    className="md:hidden text-black"
+                    className="md:hidden text-[rgb(78,181,150)]"
                     onClick={() => setMenuOpen(true)}
                     aria-label="Open menu"
                 >
@@ -70,7 +70,7 @@ export default function Header() {
                     <NavLink to="/" onClick={() => setMenuOpen(false)}>
                         <img src={logo} alt="Logo" className="h-10" />
                     </NavLink>
-                    <button onClick={() => setMenuOpen(false)} aria-label="Close menu" className='text-black'>
+                    <button onClick={() => setMenuOpen(false)} aria-label="Close menu" className='text-[rgb(78,181,150)]'>
                         <HiX size={28} />
                     </button>
                 </div>
