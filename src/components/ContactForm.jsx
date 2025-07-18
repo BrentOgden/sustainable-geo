@@ -106,10 +106,10 @@ export default function ContactForm() {
         {/* ─── Right column: contact info sidebar ──────────────────────────── */}
         <div className="space-y-4 pl-6 text-white">
           <h2 className="text-xl font-semibold">Sustainable Geospatial</h2>
-          <p className="text-gray-300">
+          <p className="text-gray-300"><a href="https://maps.app.goo.gl/n4wJEsgVbUctQZoZ6" target='_blank'>
             500 N Grant St #4155, Denver, Colorado, USA, 80203
-          </p>
-          <p>(720) 703-0701</p>
+          </a></p>
+          <p><a href="tel:7202545354">(720) 703-0701</a></p>
           <h2 className="text-xl font-semibold mt-6">Turnkey Solutions</h2>
           <ul className="text-gray-300 list-disc list-inside space-y-1">
             <li>Site Identification Ranking &amp; Monitoring</li>

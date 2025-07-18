@@ -34,7 +34,7 @@ export default function Footer() {
         <p className="text-center">
           <a
             href="/contact"
-            className="text-lg text-white hover:underline"
+            className="text-lg text-white"
           >
             Contact
           </a>
